@@ -1,0 +1,14 @@
+.App {
+    text-align: center;
+    background-color: #282c34;
+    header {
+        nav {
+            background: green;
+        }
+    }
+    footer {
+        background: red;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {}
