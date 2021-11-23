@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Pedal Faster</title>
+    <style>
+      .root {
+        background: green; 
+        min-height: 100vh;
+        width: 100vw;
+      }
+      body {
+        margin: 0;
+        background: pink;
+        overflow: hidden;
+      }
+      #main-header {
+        background: yellow;
+        display: flex;
+        font-family: really-small;
+      }
+      #main-header .image-container {
+        background: red;
+        flex: 0 1;
+        padding: 1rem;
+      }
+      #main-logo .main-image {
+        background: blue;
+      }
+      #main-header .subtitle{
+        background: black;
+        color: white;
+      }
+      nav {
+        background: purple;
+        flex: 1 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      ul.nav-list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+      }
+      .nav-list li {
+        display: block;
+      }
+
+      .nav-list > * {
+        background: orange;
+      }
+
+      .nav-list > *:hover {
+        background: black;
+      }
+
+      nav a {
+        display: inline-block;
+        padding: 1rem;
+        color: white;
+      }
+
+      nav a:visited {
+        color: pink;
+      }
+  /* Article */
+      
+    /* Article Container */
+      @media screen and (min-width: 800.01px) {
+        #main-logo .main-image {
+          width: 200px;
+        }
+         .article-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+      
+      @media screen and (min-width: 320px) {
+       #main-logo .main-image {
+          height: 75px;
+        } 
+      }
+      @media screen and (max-width: 320px) {
+        #main-logo .subtitle {
+          display: none;
+        }
+        #main-logo {
+
+        }
+        article.primary {   
+          flex-direction: column
+        }
+        .article-container {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div class="root">
+        
+        
+        <footer>
+          Copyright &copy; {currentDate}
+        </footer>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
